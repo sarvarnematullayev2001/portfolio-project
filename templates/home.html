@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <title>My Portfolio</title>
+        <meta name="viewport" content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="../static/css/shared.css">
+        <link rel="stylesheet" href="../static/css/main.css">
+    </head>
+    <body>
+        <!-- Main header -->
+        <div class="container_hd">
+            <div class="main-header">
+                <div class="main-header__brand">
+                    <a href="#home">
+                        <img src="..//static/images/colorfullogo.png" alt="My logo">
+                    </a>
+                </div>
+                <div class="main-navigation">
+                    <ul class="main-navigation__items">
+                        <li class='main-navigation__item'>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class='main-navigation__item'>
+                            <a href="#about-me">About me</a>
+                        </li>
+                        <li class='main-navigation__item'>
+                            <a href="#resources">Resources</a>
+                        </li>
+                        <li class='main-navigation__item'>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class='main-navigation__item'>
+                            <a href="#blog">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Main header -->
+
+        <!-- Home section -->
+        <div class="container">
+            <div id='home' class="home">
+                <div class="home__content">
+                    <h3 class="greeting">Assalamu Alaikum!!!</h3>
+                    <h1 class='home-intro'>I am Sarvar</h1>
+                    <h5 class="home-position">Future Junior Backend Web Developer</h5>
+                    <div class="home-social-media">
+                        <a href="https://t.me/joinchat/RrufoFYND75hNzIy" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://www.instagram.com/s_nematullayev01/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/sarvar.nematullayev.73" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.pinterest.com/sarvarnematullayev" target="_blank">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                    <div class="download-cv">
+                        {% for post in file %}
+                        <a class="primary_btn" href="{{ post.adminupload.url }}" download="{{ post.adminupload.url }}">
+                            <span>Download CV</span>
+                        </a>
+                        {% endfor %}
+                    </div>  
+                </div>
+                <div class="home__image">
+                    <img src="../static/images/Home_img.png" alt="Home image">
+                </div>
+            </div>
+        </div>
+        <!-- /Home section -->
+
+        <!-- About me section -->
+        <div class="container">
+            <div id='about-me' class="about-me">
+                <div class="about-me__image">
+                    <img src="../static/images/about-me_img.png" alt="About me image">
+                </div>
+                <div class="about-me__contents">
+                    <div class="about-me__content">
+                        <h4 class="section-subtitle">
+                            About me
+                            <span class="blur-line"></span>
+                        </h4>
+                        <h1 class="section-title">2-year Undergraduate student in IT faculty</h1>
+                        <p class="about-me-description">
+                            Let me briefly introduce myself to you. My name is Sarvar Nematullayev and I was born in Akkurgan district of Tashkent region. I am currently studying IT at Amity University in Tashkent. I am  learning web development in IT and hope to start my first job in the near future.
+                        </p>
+                        <div class="about-download-cv">
+                            {% for post in file %}
+                            <a class="primary_btn" href="{{ post.adminupload.url }}" download="{{ post.adminupload.url }}">
+                                <span>Download CV</span>
+                            </a>
+                            {% endfor %}
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /About me section -->
+
+        <!-- Resources section -->
+        <div class="container">
+            <div id='resources' class="resources">
+                <h4 class="section-subtitle">
+                    Resources
+                    <span class="blur-line"></span>
+                </h4>
+                <h1 class="section-title">The best websites for programming</h1>
+                <div class="websites">
+                    <div class="website">
+                        <div class="website__image1">
+                            <img src="../static/images/W3Schools_logo.png" alt="w3schools logo">
+                        </div>
+                        <h3 class="website-name">w3schools.com</h3>
+                        <p class="website-description">
+                            The largest web developer site on the internet. 3 billion pages displayed each year.
+                            60 million visitors each month. We create simplified and interactive learning experiences.
+                            Learning web development should be easy to understand for everyone, everywhere.
+                            W3Schools is school for web developers, covering all the aspects of web development.
+                        </p>
+                        <a href="https://www.w3schools.com/about/" class="website-link" target='_blank'>Learn more</a>
+                    </div>
+                    <div class="website">
+                        <div class="website__image2">
+                            <img src="../static/images/hackerrank-logo.png" alt="hackerrank logo">
+                        </div>
+                        <h3 class="website-name">hackerrank.com</h3>
+                        <p class="website-description">
+                            HackerRank is a big technology hiring platform that is the standard for assessing developer skills for over 2,500+ companies around the world.
+                            By enabling recruiters and hiring managers to objectively evaluate talent at every stage of the recruiting process,
+                            HackerRank helps companies hire skilled, knowledgeable, motivated developers and innovate faster.
+                        </p>
+                        <a href="https://www.hackerrank.com/about-us/" class="website-link" target='_blank'>Learn more</a>
+                    </div>
+                    <div class="website">
+                        <div class="website__image3">
+                            <img src="../static/images/free-code-camp-logo.png" alt="freecodecamp logo">
+                        </div>
+                        <h3 class="website-name">freecodecamp.org</h3>
+                        <p class="website-description">
+                            freeCodeCamp is a non-profit organization that consists of an interactive learning web platform,
+                            an online community forum, chat rooms, online publications and local organizations that intend to make learning web development accessible to everyone. 
+                            Beginning with tutorials that we introduce students the fundamentals like HTML, CSS and JavaScript and etc.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/FreeCodeCamp" class="website-link" target='_blank'>Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Resources section -->
+
+        <!-- opinions section -->
+        <div class="container">
+            <div id='opinions' class="opinions">
+                <h4 class="section-subtitle">
+                    Opinions
+                    <span class="blur-line"></span>
+                </h4>
+                <h1 class="section-title">Others opinions about me</h1>
+                <div class="opinion">
+                    <div class="opinion__image">
+                        <img src="../static/images/Aziz aka.jpg" alt="Image of my English teacher">
+                    </div>
+                    <div class="opinion__contents">
+                        <div class="opinion__content">
+                            <h3 class="opinion-name">Aziz Erkinov</h3>
+                            <h4 class="opinion-position">Dealer in Haloluybozor.uz</h4>
+                            <p class='opinion-description'>
+                                I will never regret signing a contract with Sarvar. Now I can further develop my business thanks to the services that Sarvar offers me.
+                                I am proud to have an apprentice like Sarvar and wish him even greater success in the future.
+                            </p>
+                            <div class="opinion-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star" id='active'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /opinions section -->
+
+        <!-- Portfolio section -->
+        <div class="container">
+            <div id='portfolio' class="portfolio">
+                <h4 class="section-subtitle">
+                    Portfolio
+                    <span class='blur-line'></span>
+                </h4>
+                <h1 class="section-title">Check my recent work</h1>
+                <div class="portfolio__items">
+                    <div class="portfolio__item">
+                        <img src="../static/images/gucci.jpg" alt="First Image">
+                        <div class="portfolio__item__overlay"></div>
+                        <div class="portfolio__item__info">
+                            <h4>
+                                <a href="#">Work 1</a>
+                            </h4>
+                            <p>Gucci</p>
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <img src="../static/images/magazine.jpg" alt="Second Image">
+                        <div class="portfolio__item__overlay"></div>
+                        <div class="portfolio__item__info">
+                            <h4>
+                                <a href="#">Work 2</a>
+                            </h4>
+                            <p>Magazine</p>
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <img src="../static/images/notebook.jpg" alt="Third Image">
+                        <div class="portfolio__item__overlay"></div>
+                        <div class="portfolio__item__info">
+                            <h4>
+                                <a href="#">Work 3</a>
+                            </h4>
+                            <p>Notebook</p>
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <img src="../static/images/macbook.jpg" alt="Fourth Image">
+                        <div class="portfolio__item__overlay"></div>
+                        <div class="portfolio__item__info">
+                            <h4>
+                                <a href="#">Work 4</a>
+                            </h4>
+                            <p>Macbook</p>
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <img src="../static/images/watch.jpg" alt="Fifth Image">
+                        <div class="portfolio__item__overlay"></div>
+                        <div class="portfolio__item__info">
+                            <h4>
+                                <a href="#">Work 5</a>
+                            </h4>
+                            <p>Watch</p>
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <img src="../static/images/cup.jpg" alt="Sixth Image">
+                        <div class="portfolio__item__overlay"></div>
+                        <div class="portfolio__item__info">
+                            <h4>
+                                <a href="#">Work 6</a>
+                            </h4>
+                            <p>Cup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /POrtfolio section -->
+
+        <!-- Blog section -->
+        <div class="container">
+            <div id='blog' class="blog">
+                <h4 class="section-subtitle">
+                    Blog
+                    <span class='blur-line'></span>
+                </h4>
+                <h1 class="section-title">See my blogs</h1>
+                <div class="blog-items">
+                    <div class="blog-item">
+                        <div class="blog-item__image">
+                            <img src="../static/images/blog-image1.jpg" alt="Intelligent Process Automation">
+                        </div>
+                        <div class="blog-item__content">
+                            <div class="blog-post__info">
+                                <span>
+                                    <i class="fas fa-user"></i>
+                                    Admin post 
+                                </span>
+                                <span class='move'>
+                                    <i class="fas fa-calendar"></i>
+                                    Aug 20, 2021
+                                </span>
+                            </div>
+                            <div class="blog-item__description">
+                                <h3>Intelligent Process Automation</h3>
+                                <p>Intelligent Process Automation (IPA) is another use case of AI to automate specific tasks in applications. With IPA, companies can automate processes of unstructured content. 
+                                   This technology can also collaborate with other technologies like Cognitive Automation, Machine Learning, RPA, and Computer Vision to render strong results. </p>
+                            </div>
+                        </div>
+                        <a href="https://blog.vsoftconsulting.com/blog/top-10-ai-innovation-trends-to-watch-in-2021" class="website-link" target='_blank'>Learn more</a>
+                    </div>
+                    <div class="blog-item">
+                        <div class="blog-item__image">
+                            <img src="../static/images/blog-image2.jpg" alt="Intelligent Process Automation">
+                        </div>
+                        <div class="blog-item__content">
+                            <div class="blog-post__info">
+                                <span>
+                                    <i class="fas fa-user"></i>
+                                    Admin post 
+                                </span>
+                                <span class='move'>
+                                    <i class="fas fa-calendar"></i>
+                                    Aug 21, 2021
+                                </span>
+                            </div>
+                            <div class="blog-item__description">
+                                <h3>AI for Cybersecurity</h3>
+                                <p>As technologies grow, so to are cybersecurity threats. In 2021 and beyond, data risk and phishing will remain a problem. This year, AI will become more prominent to provide security and
+                                   support against malicious activities. 2021, more organizations will implement AI to handle their cybersecurity tasks. </p>
+                            </div>
+                        </div>
+                        <a href="https://blog.vsoftconsulting.com/blog/top-10-ai-innovation-trends-to-watch-in-2021" class="website-link" target='_blank'>Learn more</a>
+                    </div>
+                    <div class="blog-item">
+                        <div class="blog-item__image">
+                            <img src="../static/images/blog-image3.png" alt="Intelligent Process Automation">
+                        </div>
+                        <div class="blog-item__content">
+                            <div class="blog-post__info">
+                                <span>
+                                    <i class="fas fa-user"></i>
+                                    Admin post 
+                                </span>
+                                <span class='move'>
+                                    <i class="fas fa-calendar"></i>
+                                    Aug 22, 2021
+                                </span>
+                            </div>
+                            <div class="blog-item__description">
+                                <h3>AI with the Internet of Things</h3>
+                                <p>Artificial intelligence is an impeccable technology and coupled with the power of the Internet of Things (IoT), we get a powerful solution for business. In 2021, the collaboration of these
+                                   two technologies will bring distinct changes in the automation industry. Smart devices server for human needs. </p>
+                            </div>
+                        </div>
+                        <a href="https://blog.vsoftconsulting.com/blog/top-10-ai-innovation-trends-to-watch-in-2021" class="website-link" target='_blank'>Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Blog section -->
+
+        <!-- Footer section -->
+        <div class="container_ft">
+            <div class="footer">
+                <div class="footer__brand">
+                    <img src="../static/images/colorfullogo.png" alt="Footer logo">
+                </div>
+                <div class='footer-navigation'>
+                    <ul class="footer-navigation__items">
+                        <li class="footer-navigation__item">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class='footer-navigation__item'>
+                            <a href="#about-me">About me</a>
+                        </li>
+                        <li class="footer-navigation__item">
+                            <a href="#resources">Resources</a>
+                        </li>
+                        <li class='footer-navigation__item'>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="footer-navigation__item">
+                            <a href="#blog">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="footer-social-media">
+                    <li class="footer-social">
+                        <a href="https://t.me/joinchat/RrufoFYND75hNzIy" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </li>
+                    <li class="footer-social">
+                        <a href="https://www.instagram.com/s_nematullayev01/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="footer-social">
+                        <a href="https://www.facebook.com/sarvar.nematullayev.73" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="footer-social">
+                        <a href="https://www.pinterest.com/sarvarnematullayev" target="_blank">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer-text">
+                    Copyright ©2021 All rights reserved | This template is made by <b>Sarvar</b>.
+                </p>
+            </div>
+        </div>
+        <!-- /Footer section -->
+    </body>
+</html>
+
+
+
+

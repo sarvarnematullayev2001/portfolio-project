@@ -1,0 +1,547 @@
+/* Home styles */
+.home {
+    display: flex;
+    padding-top: 10.5rem;
+    justify-content: space-between;
+}
+
+.greeting {
+    padding-top: 10.5rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: gray;
+    text-transform: uppercase;
+    margin: 0.625rem 0;
+}
+
+.home-intro {
+    font-size: 3.15rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.home-position {
+    font-size: 1.125rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.625rem 0;
+}
+
+.home-social-media {
+    margin: 0.625rem 0;
+}
+
+.home-social-media a {
+    font-size: 1.5rem;
+    padding-right: 0.625rem;
+    text-decoration: none;
+}
+
+.home-social-media a:hover {
+    color: blueviolet;
+}
+
+.download-cv {
+    margin: 1.25rem 0;
+}
+
+.primary_btn {
+    display: inline-block;
+    background: linear-gradient(to right,#4e17ce 0%,#e220c8 51%,#1345e6 100%);
+    color: #fff;
+    letter-spacing: 0;
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 3.125rem;
+    padding: 0 1rem;
+    outline: none!important;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    background-size: 200% auto;
+    transition: all .3s ease-in-out;
+}
+
+.primary_btn:hover {
+    background-position: right center;
+    color: #fff;
+}
+
+.home__image {
+    text-align: right;
+}
+
+.home__image img {
+    width: 70%;
+    height: auto;
+}
+
+/* /Home styles */
+
+/* About me styles */
+.about-me {
+    padding-top: 10.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me__image img{
+    width: 100%;
+}
+
+.about-me__contents {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me__content {
+    width: 75%;
+}
+
+.about-me-description {
+    font-size: 0.9375rem;
+    line-height: 1.69rem;
+    text-align: justify;
+}
+
+.about-download-cv {
+    margin: 1.25rem 0;
+}
+
+
+/* /About me styles */
+
+/* Resources styles */
+.resources {
+    padding-top: 10.5rem;
+}
+
+.websites {
+    display: flex;
+    justify-content: space-between;
+}
+
+.website {
+    margin-right: 3%;
+    text-align: center;
+    padding: 1.25rem;
+    border-radius: 10px;
+    border: 1px solid rebeccapurple;
+    box-sizing: border-box;
+    transition: all 0.4s ease 0s;
+}
+
+.website:hover .website-name,
+.website:hover .website-description,
+.website:hover .website-link {
+    color: white;
+}
+
+.website:hover {
+    background-color: #8500CC;
+}
+
+.website__image1 {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+}
+
+.website__image2 {
+    display: inline-block;
+    width: 100px;
+    height: 70px;
+}
+
+.website__image3 {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+}
+
+.website__image1 img,
+.website__image2 img,
+.website__image3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.website-name {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.69rem;
+}
+
+.website-description {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.69rem;
+    text-align: justify;
+}
+
+.website-link {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    line-height: 1.69rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rebeccapurple;
+
+}
+/* /Resources styles */
+
+/* Opinions styles */
+.opinions {
+    padding-top: 10.5rem;
+}
+
+.opinion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.opinion__image {
+    width: 40%;
+}
+
+.opinion__image img {
+    width: 100%;
+    border-radius: 18.75rem;
+}
+
+.opinion__contents {
+    width: 50%;
+}
+
+.opinion-name {
+    padding-top: 6.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.opinion-position {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.69rem;
+    text-transform: uppercase;
+    margin: 0.625rem 0;
+}
+
+.opinion-description {
+    width: 90%;
+    font-size: 0.94rem;
+    font-weight: 400;
+    line-height: 1.69rem;
+    margin: 0.625rem 0;
+    text-align: justify;
+}
+
+.opinion-rate #active {
+    color: gray;
+}
+
+.opinion-rate i {
+    color: gold;
+}
+ 
+
+/* /Opinions styles */
+
+/* Portfolio styles */
+.portfolio {
+    padding-top: 10.5rem;
+}
+
+.portfolio__items {
+    columns: 3;
+}
+
+.portfolio__item {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 1rem;
+} 
+
+.portfolio__item__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    visibility: hidden;
+    transition: all 0.4s ease 0s;
+}
+
+.portfolio__item:hover .portfolio__item__overlay {
+    visibility: visible;
+    background-color: #8500cc80;
+    top: 15px;
+    left: 15px;
+}
+
+.portfolio__item__info {
+    position: absolute;
+    bottom: 44px;
+    left: 80px;
+    opacity: 0;
+    color: white;
+    visibility: hidden;
+    transition: all 0.4s ease 0s;
+}
+
+.portfolio__item__info a {
+    color: white;
+    text-decoration: none;
+}
+
+.portfolio__item:hover .portfolio__item__info {
+    visibility: visible;
+    bottom: 24px;
+    left: 60px;
+    opacity: 1;
+}
+
+.portfolio__item img {
+    width: 100%;
+    border-radius: 5px;
+}
+/* /Portfolio styles */
+
+/* Blog styles */
+.blog {
+    padding-top: 3.5rem;
+}
+
+.blog-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-item {
+    border: 1px solid #8500cc80;
+    width: 32%;
+    border-radius: 0.875rem;
+    padding: 0.625rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.blog-item:hover {
+    box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 50%);
+}
+
+
+.blog-item__image {
+    height: 40%;
+    overflow: hidden;
+}
+
+.blog-item__image img {
+    width: 100%;
+    border-radius: 0.625rem;
+    transition: all 0.4s ease 0s;
+}
+
+.blog-item__image:hover img {
+    transform: scale(1.1);
+}
+
+.blog-item__content {
+    text-align: left;
+    padding: 1.5rem;
+    height: 50%;
+    border-radius: 0.625rem;
+    transition: all 0.42 ease 0s;
+}
+
+.blog-item__content:hover {
+    background-color: rgb(242, 254, 255);
+}
+
+.blog-post__info .move {
+    padding-left: 2rem;
+}
+
+.blog-item__description h3 {
+    margin-top: 1.8rem;
+}
+
+.blog-item__description p {
+    font-size: 0.94rem;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.69rem;
+}
+
+/* /Blog styles */
+
+@media only screen and (max-width: 991.98px) {
+    /* Home styles */
+
+    .home__image {
+        display: none;
+    }
+
+    .greeting {
+        padding-top: 0;
+    }
+
+    .home-intro {
+        margin-top: 1.25rem;
+        font-size: 3.75rem;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 1.25rem;
+    }
+
+    .home-position {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .home-social-media {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    /* /Home styles */
+
+    /* About me styles */
+
+    .about-me__image {
+        display: none;
+    }
+
+    .about-me__contents {
+        justify-content: flex-start;
+    }
+    
+    .about-me__content {
+        width: 100%;
+    } 
+    /* /About me styles */
+
+    /* Resources styles */
+    .websites {
+        flex-wrap: wrap;
+       
+    }
+
+    .website {
+        width: 48%; 
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+    /* /Resources styles */
+
+    /* Opinions styles */
+    .opinion {
+        flex-direction: column;
+    }
+
+    .opinion__image {
+        width: 70%;
+        align-self: center;
+    }
+
+    .opinion__contents {
+        width: 100%;
+    }
+
+    .opinion-name {
+        padding-top: 2.5rem;
+        font-size: 2rem;
+    }
+    /* /Opinions styles */
+
+    /* Portfolio styles */
+    .portfolio__items {
+        columns: 2;
+    }
+    /* /Portfolio styles */
+
+    /* Blog styles */
+    .blog-items {
+        flex-wrap: wrap;
+    }
+
+    .blog-item {
+        width: 48%;
+        margin-bottom: 1.5rem;
+    }
+    /* /Blog styles */
+}
+
+@media only screen and (max-width: 767.98px) {
+    /* Home styles */
+    .download-cv {
+        display: none;
+    }
+    /* /Home styles */
+
+    /* About-me styles */
+    .about-me {
+        padding-top: 5.5rem;
+    }  
+    /* /About me styles */
+
+    /* Resources styles */
+    .resources {
+        padding-top: 5.5rem;
+    }
+
+    .websites {
+        flex-direction: column;
+        row-gap: 0.94rem;
+    }
+
+    .website {
+        width: 100%;
+    }
+    /* /Resources styles */
+
+    /* Opinions styles */
+    .opinions {
+        padding-top: 5.5rem;
+    }
+
+    .opinion__image {
+        margin-top: 1.5rem;
+        width: 75%;
+    }
+
+    .opinion-name {
+        padding-top: 1.5rem;
+    }
+    /* /Opinions styles */
+
+    /* Portfolio styles */
+    .portfolio {
+        padding-top: 5.5rem;
+    }
+
+    .portfolio__items {
+        columns: 1;
+    }
+    /* /Portfolio styles */
+
+    /* Blog styles */
+    .blog {
+        padding-top: 5.5rem;
+    }
+
+    .blog-items {
+        flex-direction: column;
+    }
+
+    .blog-item {
+        width: 100%;
+        margin-bottom: 0.94rem;
+    }
+    /* /Blog styles */
+}
