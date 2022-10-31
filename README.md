@@ -8,12 +8,12 @@ This simple single page website is my first and one of my favorite project. It c
 
 ### Main page  
 <img src="https://github.com/sarvarnematullayev2001/portfolio-project/staticfiles/images/p1.png" align="center" style="width: 100%" />  
-  
+
 
 
 
 ### About page  
-<img src="https://github.com/sarvarnematullayev2001/portfolio-project/staticfiles/images/p2.png" align="center" style="width: 100%"/>  
+<img src="https://user-images.githubusercontent.com/79350805/199026117-3634ace4-ba25-427c-aae2-fcea12285a65.png" align="center" style="width: 100%"/>  
   
 
 
