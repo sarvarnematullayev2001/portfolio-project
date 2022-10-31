@@ -7,7 +7,8 @@ This simple single page website is my first and one of my favorite project. It c
 
 
 ### Main page  
-<img src="https://github.com/sarvarnematullayev2001/portfolio-project/staticfiles/images/p1.png" align="center" style="width: 100%" />  
+<img src="https://user-images.githubusercontent.com/79350805/199026420-1afc03ac-fa47-46a4-b35a-cacd8b8eac41.png" align="center" style="width: 100%" />  
+
 
 
 
@@ -19,26 +20,31 @@ This simple single page website is my first and one of my favorite project. It c
 
 
 ### Resources page  
-<img src="https://github.com/sarvarnematullayev2001/portfolio-project/tree/master/staticfiles/images/p3.png" align="center" style="width: 100%"/>  
-  
+<img src="https://user-images.githubusercontent.com/79350805/199026468-77957387-d297-4bdc-922c-78d2862049ec.png" align="center" style="width: 100%"/>  
+
+
+
 
 
 
 ### Opinions page  
-<img src="https://github.com/sarvarnematullayev2001/portfolio-project/tree/master/staticfiles/images/p4.png" align="center" style="width: 100%"/>  
-  
+<img src="https://user-images.githubusercontent.com/79350805/199026497-bcdacd14-c07f-4e3b-8fc4-1b125d9b7ec0.png" align="center" style="width: 100%"/>  
+ 
+
 
 
 
 ### Portfolio page  
-<img src="https://github.com/sarvarnematullayev2001/portfolio-project/staticfiles/images/p5.png" align="center" style="width: 100%"/>  
+<img src="https://user-images.githubusercontent.com/79350805/199026526-606b0046-3b9b-4edc-9f34-a7803ad56e9c.png" align="center" style="width: 100%"/>  
+  
   
 
 
 
 ### Blog page  
-<img src="https://github.com/sarvarnematullayev2001/portfolio-project/staticfiles/images/p6.png" align="center" style="width: 100%"/>  
-  
+<img src="https://user-images.githubusercontent.com/79350805/199026554-5ba50d3a-b94d-4565-8d47-e9de9f9408db.png" align="center" style="width: 100%"/>  
+
+
 
 
 
