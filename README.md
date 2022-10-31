@@ -7,7 +7,7 @@ This simple single page website is my first and one of my favorite project. It c
 
 
 ### Main page  
-<img src="https://github.com/sarvarnematullayev2001/portfolio-project/tree/master/staticfiles/images/p1.png" align="left" height="" width="600" />  
+<img src="https://github.com/sarvarnematullayev2001/portfolio-project/staticfiles/images/p1.png" align="center" style="width: 100%" />  
   
 
 
