@@ -80,5 +80,5 @@ This simple single page website is my first and one of my favorite project. It c
 
 
 <div>
-<a href="https://sarvarjon-portfolio.herokuapp.com" target="_blank">Demo</a>
+  <b><a href="https://sarvarjon-portfolio.herokuapp.com" target="_blank">Demo</a></b>
 </div>
